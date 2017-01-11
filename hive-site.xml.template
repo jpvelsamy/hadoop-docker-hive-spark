@@ -1,0 +1,65 @@
+  <configuration>
+        <property>
+          <name>hive.server2.thrift.min.worker.threads</name>
+          <value>5</value>
+      </property>
+      <property>
+          <name>hive.server2.thrift.max.worker.threads</name>
+          <value>50</value>
+      </property>
+<property>
+          <name>hive.server2.thrift.port</name>
+          <value>10000</value>
+      </property>
+      <property>
+          <name>hive.server2.thrift.bind.host</name>
+          <value>bonsai-master</value>
+      </property>      
+      <property>
+          <name>hive.server2.transport.mode</name>
+          <value>binary</value>
+      </property>
+      <property>
+          <name>hive.server2.thrift.http.port</name>
+          <value>10001</value>
+      </property>
+      <property>
+          <name>hive.server2.thrift.http.min.worker.threads</name>
+          <value>5</value>
+      </property>
+      <property>
+          <name>hive.server2.thrift.http.max.worker.threads</name>
+          <value>5</value>
+      </property>      
+      <property>
+          <name>hive.server2.thrift.http.path</name>
+          <value>cliservice</value>
+      </property>      
+      <property>
+          <name>hive.server2.authentication</name>
+          <value>CUSTOM</value>
+      </property>
+      <property>
+  	<name>hive.server2.custom.authentication.class</name>
+  	<value>simpleauth.SampleAuthenticator</value>
+</property>
+       <property>
+          <name>hive.server2.webui.host</name>
+          <value>bonsai-master</value>
+      </property>
+
+      <property>
+          <name>hive.server2.webui.port</name>
+          <value>10002</value>
+      </property>
+
+      <property>
+  <name>hive.server2.enable.impersonation</name>
+  <description>Enable user impersonation for HiveServer2</description>
+  <value>true</value>
+</property>
+
+
+  </configuration>
+
+
